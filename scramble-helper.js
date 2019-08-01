@@ -1,7 +1,7 @@
 // Create a function that reverses a word
 
 function reverseWord (word) {
-  return word.split('').reverse();
+  return word.split('').reverse().join('');
 }
 
 // Create a function that takes an array of words and returns a new array of the
@@ -15,6 +15,10 @@ function reverseEachWord (arrayOfWords) {
 }
 
 // Create a function that returns a random word from an array
+
+function giveRandomWord (arrayOfWords) {
+  return arrayOfWords[Math.floor(Math.random() * arrayOfWords.length)];
+}
 
 // Create an array of words and save it to a variable. Using your functions create
 // a second array of reversed words.
