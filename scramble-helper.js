@@ -9,8 +9,9 @@ function reverseWord (word) {
 
 function reverseEachWord (arrayOfWords) {
   for (let i = 0; i < arrayOfWords.length; i++) {
-    arrayOfWords[i] = reverseWord(arrayOfWords[i])
+    arrayOfWords[i] = reverseWord(arrayOfWords[i]);
   }
+  return arrayOfWords;
 }
 
 // Create a function that returns a random word from an array
