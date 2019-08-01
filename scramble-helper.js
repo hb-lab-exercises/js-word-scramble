@@ -8,7 +8,7 @@ function reverseWord (word) {
  // words with each word reversed.
 
 function reverseEachWord (arrayOfWords) {
-  for (let i = 0; i < arrayOfWords.length; i++) {
+  for (const i in arrayOfWords) {
     arrayOfWords[i] = reverseWord(arrayOfWords[i]);
   }
   return arrayOfWords;
