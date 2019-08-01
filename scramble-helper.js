@@ -7,6 +7,12 @@ function reverseWord (word) {
 // Create a function that takes an array of words and returns a new array of the
  // words with each word reversed.
 
+function reverseEachWord (arrayOfWords) {
+  for (let i = 0; i < arrayOfWords.length; i++) {
+    arrayOfWords[i] = reverseWord(arrayOfWords[i])
+  }
+}
+
 // Create a function that returns a random word from an array
 
 // Create an array of words and save it to a variable. Using your functions create
