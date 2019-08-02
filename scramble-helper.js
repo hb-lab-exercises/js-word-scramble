@@ -32,6 +32,14 @@ function giveRandomWord (arrayOfWords) {
 // Create a function that takes an array of words and returns a map with the keys
 // as the reversed word and the values as the original word.
 
+function giveMapFromArray(arrayOfWords) {
+  const wordAndReversed = new Map();
+
+  for (const word of arrayOfWords) {
+    wordAndReversed.set(word, reverseWord(word));
+  }
+  return wordAndReversed;
+}
 
 
 // Create a function that takes two strings, `guess` and `word` and a map, like
