@@ -61,7 +61,10 @@ function checkIfWordInMap (guess, word, map) {
 // Create a function that scrambles a word. Use whatever method you like to
 // rearrange the letters.
 
+function scrambleWord (word) {
+  return word.split('').sort(() => Math.random() - 0.5).join('');
 
+}
 
 // Create a function that takes an array of words and returns a map with the
 // scrambled words as the keys and the original word as the values.
