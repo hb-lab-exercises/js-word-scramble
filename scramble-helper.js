@@ -68,3 +68,12 @@ function scrambleWord (word) {
 
 // Create a function that takes an array of words and returns a map with the
 // scrambled words as the keys and the original word as the values.
+
+function giveScramblesFromArray(arrayOfWords) {
+  const scrambledMap = new Map();
+
+  for (const word of arrayOfWords) {
+    scrambledMap.set(scrambleWord(word), word);
+  }
+  return scrambledMap;
+}
