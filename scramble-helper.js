@@ -46,6 +46,14 @@ function giveMapFromArray(arrayOfWords) {
 // the one you created above. If the first string is in the map, return the word
 // if not, console log "Sorry, incorrect. The word was ..." and include word.
 
+function checkIfWordInMap (guess, word, map) {
+  if (map.has(guess)) {
+    console.log(word);
+  } else {
+    console.log(`Sorry, incorrect. The word was ... ${word}`);
+  }
+}
+
 
 // ////////////////////////////////////////////////////////////////////////////
 // FURTHER STUDY
